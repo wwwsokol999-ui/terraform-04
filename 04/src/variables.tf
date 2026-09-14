@@ -53,5 +53,9 @@ variable "vm_db_name" {
   description = "example vm_db_ prefix"
 }
 
-
+variable "ssh_public_key_path" {
+  type        = string
+  default     = "~/.ssh/id_rsa.pub"
+  description = "Path to SSH public key"
+}
 
